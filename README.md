@@ -7,10 +7,12 @@ composer require laravel/ui
 php artisan ui vue
 php artisan ui vue --auth
 npm install && npm run dev
----
+
+
 npm install bootstrap@4.0.0-alpha.6
 npm i sass@^1.32.11
-----
+
+
 slot: ecriver dans le corps
 ----npm install --save vue-chat-scroll
 ------app.php////brodcasring.php
