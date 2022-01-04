@@ -1,0 +1,229 @@
+@extends('layouts.admin')
+@section('content')
+<br>
+<div class=" container " class="text-center">
+          <div class="card direct-chat direct-chat-primary">
+            <div class="container">
+  <div class="form-row">
+                 
+                      <div class="form-group">
+                      <br>
+                      <h3 class="text-dark" class="card-title" class="display-4">&ensp;  Boite de Réception</h3>
+                      </div>
+              
+                      &ensp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&ensp;&ensp;&ensp;&ensp;
+                      <div class="form-group">
+              <div class="box-tools pull-right">
+                <div class="has-feedback">
+              <br>
+              
+                  <input type="text" class="form-control input-sm" placeholder="Search Mail"  >
+                  
+                  <span class="glyphicon glyphicon-search form-control-feedback"> </span>
+                              </div>
+  </div>
+                </div>
+              </div>
+              <!-- /.box-tools -->
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body no-padding">
+              <div class="mailbox-controls">
+                <!-- Check all button -->
+             
+                </button>
+                <div class="btn-group">
+              
+                </div>
+                <!-- /.btn-group -->
+               
+                <div class="pull-right">
+                
+                  <div class="btn-group">
+                
+                  </div>
+                  <!-- /.btn-group -->
+                </div>
+                <!-- /.pull-right -->
+              </div>
+              <div class="table-responsive mailbox-messages">
+                <table class="table table-hover table-striped">
+                  <tbody>
+                  <tr>
+                    <td><input type="checkbox"></td>
+                    <td class="mailbox-star"><a href="#"><i class="fa fa-star text-yellow"></i></a></td>
+               <div class="container">
+                    <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
+                    <td class="mailbox-subject"> Votre évaluation est faite, vous pouvez consulter vos résultats pour ce mois...
+                    </td>
+                    <td class="mailbox-attachment"> </i></td>
+                    <td class="mailbox-date">5 mins ago</td>
+                    
+               </div>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox"></td>
+                    <td class="mailbox-star"><a href="#"><i class="fa fa-star-o text-yellow"></i></a></td>
+                    <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
+                    <td class="mailbox-subject"> Voici notre objectif pour le projet d'aujourd'hui, accompagné avec la liste...
+                    </td>
+                    <td class="mailbox-attachment"><i class="fa fa-paperclip"></i></td>
+                    <td class="mailbox-date">28 mins ago</td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox"></td>
+                    <td class="mailbox-star"><a href="#"><i class="fa fa-star-o text-yellow"></i></a></td>
+                    <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
+                    <td class="mailbox-subject"> Bonjour votre demande est prise en compte, le traitement de votre deman...
+                    </td>
+                    <td class="mailbox-attachment"><i class="fa fa-paperclip"></i></td>
+                    <td class="mailbox-date">11 hours ago</td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox"></td>
+                    <td class="mailbox-star"><a href="#"><i class="fa fa-star text-yellow"></i></a></td>
+                    <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
+                    <td class="mailbox-subject"> Bonjour,vous pouvez trouver ci-joint le code pour reinitialiser votre mot de...
+                    </td>
+                    <td class="mailbox-attachment"></td>
+                    <td class="mailbox-date">15 hours ago</td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox"></td>
+                    <td class="mailbox-star"><a href="#"><i class="fa fa-star text-yellow"></i></a></td>
+                    <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
+                    <td class="mailbox-subject"> Bonjour, voici pour la template qu'on va utiliser dans ce projet accom..
+                    </td>
+                    <td class="mailbox-attachment"><i class="fa fa-paperclip"></i></td>
+                    <td class="mailbox-date">Yesterday</td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox"></td>
+                    <td class="mailbox-star"><a href="#"><i class="fa fa-star-o text-yellow"></i></a></td>
+                    <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
+                    <td class="mailbox-subject"> Bonjour, je viens de résoudre ce problème, et voila je vais vous envoy...
+                    </td>
+                    <td class="mailbox-attachment"><i class="fa fa-paperclip"></i></td>
+                    <td class="mailbox-date">2 days ago</td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox"></td>
+                    <td class="mailbox-star"><a href="#"><i class="fa fa-star-o text-yellow"></i></a></td>
+                    <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
+                    <td class="mailbox-subject"> Bonjour, vous trouvez dans la pièce jointe la version final de ...
+                    </td>
+                    <td class="mailbox-attachment"><i class="fa fa-paperclip"></i></td>
+                    <td class="mailbox-date">2 days ago</td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox"></td>
+                    <td class="mailbox-star"><a href="#"><i class="fa fa-star text-yellow"></i></a></td>
+                    <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
+                    <td class="mailbox-subject"> Bonjour, est ce que vous avez pu le faire celui ci dans le projet préced...
+                    </td>
+                    <td class="mailbox-attachment"></td>
+                    <td class="mailbox-date">2 days ago</td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox"></td>
+                    <td class="mailbox-star"><a href="#"><i class="fa fa-star text-yellow"></i></a></td>
+                    <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
+                    <td class="mailbox-subject"> Bonjour, je viens de résoudre ce problème, et voila je vais vous envoy...
+                    </td>
+                    <td class="mailbox-attachment"></td>
+                    <td class="mailbox-date">2 days ago</td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox"></td>
+                    <td class="mailbox-star"><a href="#"><i class="fa fa-star-o text-yellow"></i></a></td>
+                    <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
+                    <td class="mailbox-subject"> Bonjour,vous pouvez trouver ci-joint le code pour reinitialiser votre mot de...
+                    </td>
+                    <td class="mailbox-attachment"></td>
+                    <td class="mailbox-date">2 days ago</td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox"></td>
+                    <td class="mailbox-star"><a href="#"><i class="fa fa-star-o text-yellow"></i></a></td>
+                    <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
+                    <td class="mailbox-subject"> Bonjour votre demande est prise en compte, le traitement de votre deman...
+                    </td>
+                    <td class="mailbox-attachment"><i class="fa fa-paperclip"></i></td>
+                    <td class="mailbox-date">4 days ago</td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox"></td>
+                    <td class="mailbox-star"><a href="#"><i class="fa fa-star text-yellow"></i></a></td>
+                    <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
+                    <td class="mailbox-subject">  Votre évaluation est faite, vous pouvez consulter vos résultats pour ce mois...
+                    </td>
+                    </td>
+                    <td class="mailbox-attachment"></td>
+                    <td class="mailbox-date">12 days ago</td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox"></td>
+                    <td class="mailbox-star"><a href="#"><i class="fa fa-star-o text-yellow"></i></a></td>
+                    <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
+                    <td class="mailbox-subject"> Bonjour, je viens de résoudre ce problème, et voila je vais vous envoy...
+                    </td>
+                    <td class="mailbox-attachment"><i class="fa fa-paperclip"></i></td>
+                    <td class="mailbox-date">12 days ago</td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox"></td>
+                    <td class="mailbox-star"><a href="#"><i class="fa fa-star text-yellow"></i></a></td>
+                    <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
+                    <td class="mailbox-subject"> Voici notre objectif pour le projet d'aujourd'hui, accompagné avec la liste...
+                    </td>
+                    <td class="mailbox-attachment"><i class="fa fa-paperclip"></i></td>
+                    <td class="mailbox-date">14 days ago</td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox"></td>
+                    <td class="mailbox-star"><a href="#"><i class="fa fa-star text-yellow"></i></a></td>
+                    <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
+                    <td class="mailbox-subject"> On a pas pu le faire, pouvez vous nous ennvoyer ...
+                    </td>
+                    <td class="mailbox-attachment"><i class="fa fa-paperclip"></i></td>
+                    <td class="mailbox-date">15 days ago</td>
+                  </tr>
+                  </tbody>
+                </table>
+                <!-- /.table -->
+              </div>
+              <!-- /.mail-box-messages -->
+            </div>
+            <!-- /.box-body -->
+            <div class="box-footer no-padding">
+              <div class="mailbox-controls">
+                <!-- Check all button -->
+              
+                </button>
+                <div class="btn-group">
+               
+                </div>
+                <!-- /.btn-group -->
+              <div class="container">
+                <div class="pull-right">
+
+                  <div class="btn-group">
+                   
+                  </div>
+                  <!-- /.btn-group -->
+                </div>
+                <!-- /.pull-right -->
+              </div>
+            </div>
+          </div>
+          <!-- /. box -->
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+    </section>
+    <!-- /.content -->
+  </div>
+    
+@endsection
+

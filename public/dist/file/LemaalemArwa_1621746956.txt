@@ -1,0 +1,136 @@
+@extends('layouts.admin')
+@section('content')
+<style>
+    .color{
+        background:#FAEBD7;
+    }
+    .color1{
+        background:#A9A9A9;
+    }
+</style>
+<div style="padding:40px">
+    @if($count!=0)
+        @foreach($demande as $d)
+       
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        &emsp;
+                        Nom :&emsp;
+                        @foreach($users as $user)
+                            @if($user->id==$d->user_id)
+                                <p id="nom">{{$user->nom}}&emsp;{{$user->prenom}}</p>
+                            @endif
+                        @endforeach
+                    </div>
+                    <div class="row">
+                        &emsp;
+                        Sujet :&emsp;
+                        <p id="sujet"> {{$d->sujet}}</p>
+                    </div>
+                    <div class="row">
+                        &emsp;
+                        Etat :&emsp;
+                        <p id="etat"> {{$d->etat}}</p>
+                    </div>
+                    <div class="row">
+                        &emsp;
+                        Date :&emsp;
+                        <p id="date"> {{$d->created_at}}</p>
+                    </div>
+                </div>
+                <div style="margin-left:900px;margin-bottom:20px">
+                    @if(strcmp($d->etat,'Nouveau')==0)
+                        <button type="button" id="commentaire" value="{{$d->commentaire}}" class="btn btn-warning editbttn " >Traiter</button>
+                    @endif
+                    <input type="hidden" id="id" value="{{$d->id}}" >
+                </div>
+            </div>
+        @endforeach
+    @else
+        <div style="margin-top:40px;margin-left:300px">
+            <h3 class="text-secondary">La liste des demandes de Congé est vide </h3>
+        </div>
+    @endif
+</div>
+
+<!-- Modal traiter 2 -->
+<div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close btnclose" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+                <form method="POST" action="/traiter">
+                    {{ csrf_field() }}
+                    <h4 style="margin-top:10px;">Traiter la demande :</h4>
+                    <br>
+                    <div class="row">
+                        &emsp;
+                        Nom :&emsp;
+                        <p id="nom1"></p>
+                    </div>
+                    <div class="row">
+                        &emsp;
+                        Sujet :&emsp;
+                        <p id="sujet1"></p>
+                    </div>
+                    <div class="row">
+                        &emsp;
+                        Demande :&emsp;
+                        <p id="commentaire1"> </p>
+                    </div>
+                    <div class="row">
+                        &emsp;
+                        Date :&emsp;
+                        <p id="date1"> </p>
+                    </div>
+                    <div style="margin:10px;">
+                        <input type="hidden" class="form-control" name="iddemande"  id="iddemande" value="">
+                        <input type="text" class="form-control" name="nreponse" placeholder="Modifier l'état.." >
+                        @if($errors->has('nreponse'))
+							<p class="text-danger err">{{$errors->first('nreponse')}}</p>
+						@endif
+                    </div>
+                    <div style="margin-left:360px;margin-top:10px;margin-bottom:20px">
+                        <button type="submit" class="btn btn-warning">Confirmer</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $('.editbttn').click(function(e)
+    {
+        e.preventDefault();
+        var nom=$('#nom').text();
+        var sujet= $('#sujet').text();
+        var commentaire=$('#commentaire').val();
+        var date=$('#date').text();
+        var etat=$('#etat').text();
+        var id=$('#id').val();
+        $('#iddemande').val(id);
+        document.getElementById('nom1').textContent=nom;
+        document.getElementById('sujet1').textContent=sujet;
+        document.getElementById('commentaire1').textContent=commentaire;
+        document.getElementById('date1').textContent=date;
+        //document.getElementById('etat1').textContent=etat;
+       
+            $('#edit').modal('show');
+        
+
+    })
+    $(document).ready(function(){
+    @if($errors->has('netat'))
+        $('#edit').modal('show');
+    @endif
+    $('.btnclose').click(function(e)
+    {
+        e.preventDefault();
+        $('.err').text("");
+    })
+})
+</script>
+@endsection

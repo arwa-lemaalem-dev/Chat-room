@@ -1,0 +1,156 @@
+/* .list-group {
+        overflow-y: scroll;
+        height: 100%;
+        padding-right: 5px;
+    } */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: #edeff2; */
+    font-family: "Calibri", "Roboto", sans-serif;
+}
+
+.chat_window {
+    max-width: 100%;
+    /* height: 500px; */
+    margin-top: -1.5%;
+    overflow: hidden;
+}
+
+.messages {
+    position: relative;
+    list-style: none;
+    padding: 20px 10px 0 10px;
+    height: 500px;
+    overflow: scroll;
+}
+
+.messages .message {
+    clear: both;
+    overflow: hidden;
+    margin-bottom: 20px;
+    transition: all 0.5s linear;
+    opacity: 0;
+}
+
+.bottom_wrapper {
+    position: relative;
+    width: 100%;
+    background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: -40px;
+    /* position: absolute; */
+    bottom: 0;
+}
+
+.bottom_wrapper .message_input_wrapper {
+    display: inline-block;
+    height: 50px;
+    border-radius: 25px;
+    border: 1px solid #bcbdc0;
+    width: calc(100% - 160px);
+    position: relative;
+    padding: 0 20px;
+    margin-top: 5px
+}
+
+.bottom_wrapper .message_input_wrapper .message_input {
+    border: none;
+    height: 100%;
+    box-sizing: border-box;
+    width: calc(100% - 40px);
+    outline-width: 0;
+    color: gray;
+}
+
+.bottom_wrapper .send_message {
+    margin-top: 5px;
+    width: 140px;
+    height: 50px;
+    display: inline-block;
+    border-radius: 50px;
+    background-color: #a3d063;
+    border: 2px solid #a3d063;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    text-align: center;
+    float: right;
+}
+
+.bottom_wrapper .send_message:hover {
+    color: #a3d063;
+    background-color: #fff;
+}
+
+.bottom_wrapper .send_message .text {
+    font-size: 18px;
+    font-weight: 300;
+    display: inline-block;
+    line-height: 48px;
+}
+
+
+/* width */
+
+ ::-webkit-scrollbar {
+    width: 3px;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.row {
+    margin-top: 4%
+}
+
+.users a {
+    text-decoration: none !important;
+    display: block;
+    margin-bottom: 0;
+    color: #555
+}
+
+.users .item {
+    padding: 20px
+}
+
+.users .item .image {
+    min-width: 50px;
+    max-width: 50px;
+    height: 50px;
+    margin-right: 15px
+}
+
+.users .item img {
+    padding: 3px;
+    border: 1px solid #28a745
+}
+
+.users .item h3 {
+    color: #555;
+    font-weight: 400;
+    margin-bottom: 0
+}
