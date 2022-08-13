@@ -1,62 +1,43 @@
+<h1 style="text-align:center">Realtime chat application with Vue.js/Laravel</h1>
+<br>
+
+
+## Requirements
+
+-   PHP >= 7.3
+
+## Description
+
+<p>Il s'agit de l'application complète de chat multiple en temps réel. cette application est basée sur deux rôles (fournisseurs et client)</p>
+
+## App Screenshot
+<img src="public\assets\screenshot\account.png">
+<img src="public\assets\screenshot\converstaion.png">
+
+## Intstallation
+
+ * Execute the following commands in order
+ # install dependencies
 npm install
+composer install
+# serve with hot reload at localhost:8080
 npm run dev
+php artisan serve
 
+ * Set up the **DataBase**
+``` bash
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_USERNAME=
+DB_PASSWORD=
+DB_CONNECTION=chat
+DB_DATABASE=
+```
 
-RQ:
-composer require laravel/ui
-php artisan ui vue
-php artisan ui vue --auth
-npm install && npm run dev
-
-
-npm install bootstrap@4.0.0-alpha.6
-npm i sass@^1.32.11
-
-
-slot: ecriver dans le corps
-----npm install --save vue-chat-scroll
-------app.php////brodcasring.php
-------php artisan event:generate
--------saut de ligne : style="white-space: pre-line;"
-
-PDF
-composer require barryvdh/laravel-dompdf
-
-app.php->providers->Add Barryvdh\DomPDF\ServiceProvider::class,
-->alisas->'PDF'=>Barryvdh\DomPDF\Facade::class,
-
-Controller:
-use PDF;
-
-function pdf()
-{
-$pdf=\App::make('dompdf.wrapper');
-$pdf->loadHTML($this->convert_data_to_html());
-$pdf->stream();
-}
-function convert_data_to_html()
-{
-$data=$this->getData();//getmsgByID
-$output='page html';
-retrun $output;
-
-}
-
-<a href=""></a>
-
-
-
-new URLSearchParams(window.location.search).get('id')
-
-
--enable client event pusher ==> typing
-
-
-
-
-
-
-
-
-
-
+``` bash
+php artisan migrate
+php artisan key:generate
+php artisan storage:link
+php artisan optimize
+php artisan route:clear
+```
